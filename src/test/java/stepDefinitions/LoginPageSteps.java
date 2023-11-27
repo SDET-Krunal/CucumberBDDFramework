@@ -24,7 +24,7 @@ public class LoginPageSteps {
         loginPage.doLogin(username, password);
     }
 
-    @Then("User should get navigate to application Home page")
+    @Then("User should get navigated to application Home page")
     public void verifyApplicationHomePage() {
         assert productsPage.getPageTitle().equals(Constant.PRODUCTS);
 

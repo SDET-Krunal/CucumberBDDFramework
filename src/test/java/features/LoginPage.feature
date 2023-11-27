@@ -3,7 +3,7 @@ Feature: "Application Login"
   Scenario Outline: "User is able to login with valid credentials"
     Given User is on application login page
     When User enters username as "<username>" and password as "<password>"
-    Then User should get navigate to application Home page
+    Then User should get navigated to application Home page
 
     Examples:
       | username                | password     |
