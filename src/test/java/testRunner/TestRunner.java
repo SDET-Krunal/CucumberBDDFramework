@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/java/features/LoginPage.feature"},
         glue = {"stepDefinitions", "hook"},
-        plugin = {"pretty", "html:test-report.html"}
+        plugin = {"pretty", "html:Reports/HTMLReport/test-report.html", "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 public class TestRunner {
 }
